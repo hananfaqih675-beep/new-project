@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/new-project/',
+  base: process.env.VERCEL ? '/' : '/new-project/',
   plugins: [react(), tailwindcss()],
 })

@@ -22,13 +22,20 @@ git push -u origin main
 
 استبدل `YOUR_USERNAME` باسم مستخدمك و `YOUR_REPO` باسم المستودع.
 
-## تفعيل الموقع على GitHub Pages
+## نشر الموقع (طريقتان)
 
-1. ادخل إلى المستودع على GitHub
-2. **Settings** → **Pages**
-3. تحت **Build and deployment** اختر **Source: GitHub Actions**
-4. ادفع التعديلات (push) وسيُنشر الموقع تلقائياً
-5. الرابط: `https://YOUR_USERNAME.github.io/YOUR_REPO/`
+### الطريقة 1: Vercel (الأسهل — نوصي بها)
+1. ادخل إلى [vercel.com](https://vercel.com) وسجّل دخولك بـ GitHub
+2. اضغط **Add New** → **Project**
+3. اختر مستودع **new-project** واضغط **Import**
+4. اضغط **Deploy** (بدون تغيير الإعدادات)
+5. بعد دقيقة ستحصل على رابط مثل: `https://new-project-xxx.vercel.app`
+
+### الطريقة 2: أمر النشر من الجهاز
+```bash
+npm run deploy
+```
+ثم غيّر إعدادات GitHub Pages إلى **Deploy from branch** → فرع **gh-pages**
 
 ## البنية
 
