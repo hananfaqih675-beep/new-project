@@ -22,6 +22,14 @@ git push -u origin main
 
 استبدل `YOUR_USERNAME` باسم مستخدمك و `YOUR_REPO` باسم المستودع.
 
+## تفعيل الموقع على GitHub Pages
+
+1. ادخل إلى المستودع على GitHub
+2. **Settings** → **Pages**
+3. تحت **Build and deployment** اختر **Source: GitHub Actions**
+4. ادفع التعديلات (push) وسيُنشر الموقع تلقائياً
+5. الرابط: `https://YOUR_USERNAME.github.io/YOUR_REPO/`
+
 ## البنية
 
 - **الصفحة الرئيسية**: Hero، المنتجات، الطلبات الخاصة، تتبع الطلبات، المميزات، البروتوكول الإبداعي، الشهادات، CTA
